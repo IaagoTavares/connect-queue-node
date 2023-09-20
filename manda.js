@@ -1,6 +1,8 @@
 // Load the AWS SDK for Node.js
+
 var AWS = require('aws-sdk');
 var express = require('express');
+AWS.config.loadFromPath('./config.json');
 
 var app = express();
 
